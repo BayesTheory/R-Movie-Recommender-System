@@ -21,7 +21,7 @@ Este projeto utiliza dois conjuntos de dados (incluídos como arquivos `.csv` no
 2.  **TMDB (The Movie Database) - Derivado:** Um dataset maior com informações de filmes e avaliações.
     *   `movies2.csv`
     *   `ratings2.csv`
-    *   
+
 ## Metodologia
 
 Ambos os scripts seguem passos similares:
