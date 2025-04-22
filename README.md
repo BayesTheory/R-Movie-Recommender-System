@@ -22,8 +22,6 @@ Este projeto utiliza dois conjuntos de dados (incluídos como arquivos `.csv` no
     *   `movies2.csv`
     *   `ratings2.csv`
 
-*(Nota: Os arquivos CSV devem estar presentes no diretório para os scripts funcionarem).*
-
 ## Conteúdo do Repositório
 
 *   **`IC MOVIELENS.R`**: Script R que realiza análise exploratória, pré-processamento, modelagem (UBCF, IBCF, SVD, LIBMF) e avaliação no dataset MovieLens.
@@ -38,7 +36,7 @@ Ambos os scripts seguem passos similares:
 1.  **Carregamento de Bibliotecas:** Importa as bibliotecas necessárias em R.
 2.  **Carregamento e Limpeza dos Dados:** Lê os arquivos CSV, trata valores ausentes (NA).
 3.  **Análise Exploratória de Dados (EDA):** Visualiza a distribuição das notas, contagem de votos, gêneros, datas de lançamento, etc., usando `ggplot2`.
-4.  **Pré-processamento para `recommenderlab`:** Converte os dataframes de avaliações para o formato `realRatingMatrix`, normaliza as notas e filtra usuários/itens com poucas avaliações [5, 7].
+4.  **Pré-processamento para `recommenderlab`:** Converte os dataframes de avaliações para o formato `realRatingMatrix`, normaliza as notas e filtra usuários/itens com poucas avaliações.
 5.  **Cálculo de Similaridade:** Explora similaridade entre usuários e itens usando cosseno e Pearson.
 6.  **Construção e Treinamento dos Modelos:** Define um esquema de avaliação (`evaluationScheme`) e treina múltiplos modelos (`Recommender`) como UBCF, IBCF, SVD, LIBMF, ALS [5].
 7.  **Avaliação dos Modelos:** Utiliza a função `evaluate` para comparar os modelos com base em métricas como ROC e Precisão/Recall, gerando gráficos comparativos [8].
